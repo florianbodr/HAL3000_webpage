@@ -15,11 +15,15 @@
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%);
-				display: grid;
-				grid-template-columns: repeat(5, 1fr);
-				gap: 40px;
-				justify-items: center;
-				align-items: end;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 7.5vw;
+			}
+			.icon-row {
+				display: flex;
+				gap: 7.5vw;
+				align-items: flex-end;
 			}
 			.icon-grid a {
 				display: block;
@@ -58,12 +62,16 @@
 				.icon-grid {
 					position: static;
 					transform: none;
+					display: grid;
 					grid-template-columns: repeat(3, 1fr);
 					gap: 20px;
 					padding: 40px 20px;
 					box-sizing: border-box;
 					min-height: calc(100vh - 80px);
 					align-content: center;
+				}
+				.icon-row {
+					display: contents;
 				}
 				.iconsize {
 					width: 20vw;
@@ -95,15 +103,19 @@
 	</head>
 	<body>
 		<div class="icon-grid">
-			<a href="https://hal3000.ddns.net/cv_FB_web.pdf"><img src="icons/cv_icon.png" alt="My Resume" class="iconsize"></a>
-			<a href="https://hal3000.ddns.net/publications.html"><img src="icons/list.png" alt="Publications list" class="iconsize"></a>
-			<a href="https://hal3000.ddns.net/movies"><img src="icons/movies.png" alt="Movies" class="iconsize"></a>
-			<a href="https://hal3000.ddns.net/shows"><img src="icons/shows.png" alt="TV Shows" class="iconsize"></a>
-			<a href="https://hal3000.ddns.net/subtitles"><img src="icons/subtitles.png" alt="Subtitles" class="iconsize"></a>
-			<a href="https://hal3000.ddns.net/addmusic"><img src="icons/music_transfer.png" alt="Music Transfer" class="iconsize"></a>
-			<a href="https://hal3000.ddns.net/music"><img src="icons/music.png" alt="Music" class="iconsize"></a>
-			<a href="https://hal3000.ddns.net/cloud"><img src="icons/cloud.svg" alt="Nextcloud" class="iconsize"></a>
-			<a href="https://hal3000.ddns.net/media"><img src="icons/mediaserver.svg" alt="Media Server" class="iconsize"></a>
+			<div class="icon-row">
+				<a href="https://hal3000.ddns.net/cv_FB_web.pdf"><img src="icons/cv_icon.png" alt="My Resume" class="iconsize"></a>
+				<a href="https://hal3000.ddns.net/publications.html"><img src="icons/list.png" alt="Publications list" class="iconsize"></a>
+				<a href="https://hal3000.ddns.net/movies"><img src="icons/movies.png" alt="Movies" class="iconsize"></a>
+				<a href="https://hal3000.ddns.net/shows"><img src="icons/shows.png" alt="TV Shows" class="iconsize"></a>
+				<a href="https://hal3000.ddns.net/subtitles"><img src="icons/subtitles.png" alt="Subtitles" class="iconsize"></a>
+			</div>
+			<div class="icon-row">
+				<a href="https://hal3000.ddns.net/addmusic"><img src="icons/music_transfer.png" alt="Music Transfer" class="iconsize"></a>
+				<a href="https://hal3000.ddns.net/music"><img src="icons/music.png" alt="Music" class="iconsize"></a>
+				<a href="https://hal3000.ddns.net/cloud"><img src="icons/cloud.svg" alt="Nextcloud" class="iconsize"></a>
+				<a href="https://hal3000.ddns.net/media"><img src="icons/mediaserver.svg" alt="Media Server" class="iconsize"></a>
+			</div>
 		</div>
 		<div class="contact">
 			<table class="contable">
