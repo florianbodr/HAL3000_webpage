@@ -30,7 +30,17 @@
 				text-decoration: underline;
 			}
 
-			@media (max-width: 768px) {
+			@media (prefers-color-scheme: light) {
+			body {
+				background-color: #f6f8fa;
+				color: #1f2328;
+			}
+			a {
+				color: #0969da;
+			}
+		}
+
+		@media (max-width: 768px) {
 				div.main {
 					margin: 20px auto;
 					padding: 0 15px;

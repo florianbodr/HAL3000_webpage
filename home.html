@@ -58,7 +58,16 @@
 				width: auto;
 			}
 
-			@media (max-width: 768px) {
+			@media (prefers-color-scheme: light) {
+			body {
+				background-color: #f6f8fa;
+			}
+			div.hidden img {
+				filter: invert(1);
+			}
+		}
+
+		@media (max-width: 768px) {
 				.icon-grid {
 					position: static;
 					transform: none;
