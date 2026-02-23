@@ -68,6 +68,9 @@
 		}
 
 		@media (max-width: 768px) {
+				body {
+					overflow-x: hidden;
+				}
 				.icon-grid {
 					position: static;
 					transform: none;
@@ -76,8 +79,10 @@
 					gap: 20px;
 					padding: 40px 20px;
 					box-sizing: border-box;
+					width: 100%;
 					min-height: calc(100vh - 80px);
 					align-content: center;
+					justify-items: center;
 				}
 				.icon-row {
 					display: contents;
