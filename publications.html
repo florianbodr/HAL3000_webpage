@@ -9,21 +9,40 @@
 			body {
 				background-color: #2f2d2d;
 				color: white;
+				margin: 0;
 			}
 			div.main {
 				max-width: 900px;
 				margin: 40px auto;
 				padding: 0 20px;
 			}
-			li{
-    			margin: 15px 0;
+			h1 {
+				text-align: center;
 			}
-			a { color: white; }
+			li {
+				margin: 15px 0;
+				overflow-wrap: break-word;
+				word-break: break-word;
+			}
+			a {
+				color: white;
+				text-decoration: underline;
+			}
+
+			@media (max-width: 768px) {
+				div.main {
+					margin: 20px auto;
+					padding: 0 15px;
+				}
+				ul {
+					padding-left: 20px;
+				}
+			}
 		</style>
 	</head>
 	<body>
 		<div class="main">
-			<center><h1>Publications List:</h1></center>
+			<h1>Publications List:</h1>
 			<ul>
 				<li>Shlyonsky, Vadim & Prelle, Bertrand & Bodranghien, Florian & Bischop, Don & Gall, David. (2022). Exam problems that link physical concepts with electrical phenomena in living cells. American Journal of Physics. 90. 587-593. <a href="https://doi.org/10.1119/5.0075228">10.1119/5.0075228.</a></li>
 				<li>Grami, Fatma & de Marco, Giovanni & Bodranghien, Florian & Manto, Mario & Habas, Christophe. (2021). Cerebellar Transcranial Direct Current Stimulation Reconfigures Brain Networks Involved in Motor Execution and Mental Imagery. The Cerebellum. 21.  <a href="https://doi.org/10.1007/s12311-021-01322-y">10.1007/s12311-021-01322-y.</a></li>

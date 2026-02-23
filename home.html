@@ -8,63 +8,102 @@
 		<style>
 			body {
 				background-color: #2f2d2d;
+				margin: 0;
 			}
-			table.maintable td {
-				text-align:center;
-				vertical-align: bottom;
-				padding:40px;
+			.icon-grid {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				display: grid;
+				grid-template-columns: repeat(5, 1fr);
+				gap: 40px;
+				justify-items: center;
+				align-items: end;
+			}
+			.icon-grid a {
+				display: block;
+			}
+			div.contact {
+				position: absolute;
+				bottom: 10px;
+				left: 10px;
 			}
 			table.contable td {
 				text-align:center;
 				vertical-align: bottom;
 				padding:20px;
 			}
-			div.maintable {
-				position: absolute;
-    				top: 50%;
-    				left: 50%;
-    				transform: translate(-50%, -50%);
-  				}
-			div.contact {
-				position: absolute;
-    				bottom: 10px;
-    				left: 10px;
-    				}
 			div.hidden {
 				position: absolute;
-    				bottom: 10px;
-    				right: 5%;
-    				transform: translate(+10%, +10px);
-    				}
+				bottom: 10px;
+				right: 5%;
+				transform: translate(+10%, +10px);
+			}
+			table.maintable td {
+				text-align:center;
+				vertical-align: bottom;
+				padding:40px;
+			}
 			.iconsize {
-			  	width: 8vw;
-			  	height: auto;
+				width: 8vw;
+				height: auto;
 			}
 			.contactsize {
-			  	height: 3vw;
-			  	width: auto;
+				height: 3vw;
+				width: auto;
+			}
+
+			@media (max-width: 768px) {
+				.icon-grid {
+					position: static;
+					transform: none;
+					grid-template-columns: repeat(3, 1fr);
+					gap: 20px;
+					padding: 40px 20px;
+					box-sizing: border-box;
+					min-height: calc(100vh - 80px);
+					align-content: center;
+				}
+				.iconsize {
+					width: 20vw;
+				}
+				div.contact {
+					position: static;
+					text-align: center;
+					padding-bottom: 10px;
+				}
+				.contactsize {
+					height: 8vw;
+				}
+				table.contable td {
+					padding: 10px;
+				}
+				div.hidden {
+					position: static;
+					text-align: center;
+					padding-bottom: 10px;
+				}
+				div.hidden .iconsize {
+					width: 20vw;
+				}
+				div.hidden table.maintable td {
+					padding: 20px;
+				}
 			}
 		</style>
 	</head>
 	<body>
-		<div class="maintable">
-			<table class="maintable">
-				<tbody>
-					<tr>
-						<td><a href="https://hal3000.ddns.net/cv_FB_web.pdf"><img src="icons/cv_icon.png" alt="My Resume" class="iconsize"></a></td>
-						<td><a href="https://hal3000.ddns.net/publications.html"><img src="icons/list.png" alt="Publications list" class="iconsize"></a></td>
-						<td><a href="https://hal3000.ddns.net/movies"><img src="icons/movies.png" alt="Movies" class="iconsize"></a></td>
-						<td><a href="https://hal3000.ddns.net/shows"><img src="icons/shows.png" alt="TV Shows" class="iconsize"></a></td>
-						<td><a href="https://hal3000.ddns.net/subtitles"><img src="icons/subtitles.png" alt="Subtitles" class="iconsize"></a></td>
-					</tr>
-					<tr>
-						<td><a href="https://hal3000.ddns.net/addmusic"><img src="icons/music_transfer.png" alt="Music Transfer" class="iconsize"></a></td>
-						<td><a href="https://hal3000.ddns.net/music"><img src="icons/music.png" alt="Music" class="iconsize"></a></td>
-						<td><a href="https://hal3000.ddns.net/cloud"><img src="icons/cloud.svg" alt="Nextcloud" class="iconsize"></a></td>
-						<td><a href="https://hal3000.ddns.net/media"><img src="icons/mediaserver.svg" alt="Media Server" class="iconsize"></a></td>
-					</tr>
-				</tbody>
-			</table>
+		<div class="icon-grid">
+			<a href="https://hal3000.ddns.net/cv_FB_web.pdf"><img src="icons/cv_icon.png" alt="My Resume" class="iconsize"></a>
+			<a href="https://hal3000.ddns.net/publications.html"><img src="icons/list.png" alt="Publications list" class="iconsize"></a>
+			<a href="https://hal3000.ddns.net/movies"><img src="icons/movies.png" alt="Movies" class="iconsize"></a>
+			<a href="https://hal3000.ddns.net/shows"><img src="icons/shows.png" alt="TV Shows" class="iconsize"></a>
+			<a href="https://hal3000.ddns.net/subtitles"><img src="icons/subtitles.png" alt="Subtitles" class="iconsize"></a>
+			<a href="https://hal3000.ddns.net/addmusic"><img src="icons/music_transfer.png" alt="Music Transfer" class="iconsize"></a>
+			<a href="https://hal3000.ddns.net/music"><img src="icons/music.png" alt="Music" class="iconsize"></a>
+			<a href="https://hal3000.ddns.net/cloud"><img src="icons/cloud.svg" alt="Nextcloud" class="iconsize"></a>
+			<a href="https://hal3000.ddns.net/media"><img src="icons/mediaserver.svg" alt="Media Server" class="iconsize"></a>
 		</div>
 		<div class="contact">
 			<table class="contable">
