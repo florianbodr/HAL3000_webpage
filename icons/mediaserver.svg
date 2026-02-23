@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Server unit 1 -->
+  <rect fill="white" x="8" y="8" width="112" height="28" rx="5"/>
+  <circle fill="#2f2d2d" cx="108" cy="22" r="6"/>
+  <rect fill="#2f2d2d" x="16" y="17" width="40" height="5" rx="2"/>
+  <rect fill="#2f2d2d" x="62" y="17" width="20" height="5" rx="2"/>
+  <!-- Server unit 2 -->
+  <rect fill="white" x="8" y="44" width="112" height="28" rx="5"/>
+  <circle fill="#2f2d2d" cx="108" cy="58" r="6"/>
+  <rect fill="#2f2d2d" x="16" y="53" width="40" height="5" rx="2"/>
+  <rect fill="#2f2d2d" x="62" y="53" width="20" height="5" rx="2"/>
+  <!-- Play button -->
+  <circle fill="white" cx="64" cy="100" r="22"/>
+  <polygon fill="#2f2d2d" points="57,90 57,110 79,100"/>
+</svg>
